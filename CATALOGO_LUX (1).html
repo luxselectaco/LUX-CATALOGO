@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX Selecta | Catálogo Oficial 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcfbf9;
+            --card-bg: #ffffff;
+            --accent-gold: #c5a059;
+            --accent-rose-gold: #c58b7e;
+            --accent-rose-light: #f5e8e5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #f0e6e4;
+            --wa-green: #25d366;
+            --wa-green-hover: #1ebd56;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+
+        .hummingbird-container {
+            margin: 0 auto 15px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hummingbird-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .brand-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3.2rem;
+            letter-spacing: 6px;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .brand-subtitle {
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .welcome-msg {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            color: #ccc;
+            font-style: italic;
+            border-left: 2px solid var(--accent-gold);
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        .nav-categories {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 20px 10px;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            background: #ffffff;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .category-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--accent-rose-gold);
+            margin: 40px 0 20px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #f0e6e4; box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 260px;
+            background-color: #fcf8f7;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .img-container img {
+            transform: scale(1.05);
+        }
+
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-rose-gold); color: var(--accent-rose-gold);
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-name {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .product-hook {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .product-price {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+
+        .btn-wa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--wa-green);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-wa:hover {
+            background-color: var(--wa-green-hover);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px 20px;
+            border-top: 1px solid #222;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer strong {
+            color: var(--accent-gold);
+        }
+
+        @media (max-width: 600px) {
+            .brand-title { font-size: 2.2rem; }
+            .product-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+            .img-container { height: 200px; }
+            .product-info { padding: 12px; }
+            .product-name { font-size: 0.95rem; }
+            .product-price { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+        <header>
+        <div class="hummingbird-container">
+            <!-- SVG del Colibrí en Rose Gold basado en la imagen de identidad -->
+            <svg class="hummingbird-svg" viewBox="0 0 100 100" fill="none" stroke="#C58B7E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M 85,32 C 68,36 53,46 45,55 L 20,28 C 30,30 40,36 46,45 C 48,32 55,20 68,15 L 85,32 Z"/>
+                <path d="M 45,55 C 42,62 40,75 36,90 C 43,76 48,66 53,60"/>
+                <path d="M 53,60 C 60,50 68,40 85,32"/>
+                <path d="M 75,28 L 92,25"/>
+            </svg>
+        </div>
+        <h1 class="brand-title" style="color: var(--text-primary); font-weight: 400; letter-spacing: 8px;">LUX</h1>
+        <p class="brand-subtitle" style="color: var(--accent-rose-gold); font-size: 0.8rem; letter-spacing: 4px; margin-top: -5px;">SELECTA | CURADURÍA & ESENCIA</p>
+        <div class="welcome-msg" style="border-left: 2px solid var(--accent-rose-gold); color: #555;">
+            "La belleza es curaduría. Seleccionamos lo mejor para tu estándar más alto."
+        </div>
+    </header>
+
+    <nav class="nav-categories">
+        <a href="#ROSTRO" class="nav-btn">ROSTRO</a>
+        <a href="#LABIOS" class="nav-btn">LABIOS</a>
+        <a href="#ACCESORIOS" class="nav-btn">ACCESORIOS</a>
+        <a href="#PESTAÑAS" class="nav-btn">PESTAÑAS</a>
+        <a href="#CORPORAL" class="nav-btn">CORPORAL</a>
+        <a href="#OJOS" class="nav-btn">OJOS</a>
+        <a href="#CEJAS" class="nav-btn">CEJAS</a>
+        <a href="#OTROS" class="nav-btn">OTROS</a>
+    </nav>
+
+    <main class="container">
+        <h2 id="ROSTRO" class="category-title">ROSTRO</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1vZSqW7smlIuihPbjrp_7Y8kOiS1TptdT" alt="Polvo De Hadas Ref PH03" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Polvo De Hadas Ref PH03</h3>
+                    <p class="product-hook">Luminosidad mágica e instantánea en rostro y cuerpo con acabado dorado radiante.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas%20Ref%20PH03.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/14u-ZplvsV6hO6-KwQkfktKVvJjncPoEV" alt="Polvo De Hadas Golden" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Polvo De Hadas Golden</h3>
+                    <p class="product-hook">Destellos dorados de alta precisión para un glow de impacto en piel y escote.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas%20Golden.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1x5enTqmz3sSpERZQV3R527uZW9eBc_Mi" alt="Base Aura Tono 3 - 4" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Base Aura Tono 3 - 4</h3>
+                    <p class="product-hook">Cobertura mate impecable y construible sin sensación pesada todo el día.</p>
+                    <div class="product-price">$30.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Base%20Aura%20Tono%203%20-%204.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1YOqEKMbR2By_4ZM3GGF2Eq-DIdRXxQpf" alt="Contorno En Crema Queen" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Contorno En Crema Queen</h3>
+                    <p class="product-hook">Esculpido facial de precisión profesional con aplicador de esponja ultra suave.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Contorno%20En%20Crema%20Queen.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1MNdIiCB-UtjvVvNcc8KVBDjXEh_YWBft" alt="Corrector rosado Barbie" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Corrector rosado Barbie</h3>
+                    <p class="product-hook">Neutraliza y da luz a la mirada cancelando tonos oscuros en las ojeras.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Corrector%20rosado%20Barbie.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1_ApmEfpM5yyxdSUfNr6_DEWCA0BEibdS" alt="Fijador Dreams" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Fijador Dreams</h3>
+                    <p class="product-hook">Fijación prolongada con hidratación de aloe vera y pepino sin efecto pesado.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Fijador%20Dreams.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/14NAE3230HCRlTxRbeLP_R6Z54ogptGis" alt="Iluminador Tornasol Princesas Cenicienta" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Iluminador Tornasol Princesas Cenicienta</h3>
+                    <p class="product-hook">Destellos de cuento de hadas para puntos de luz mágicos en tu rostro.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tornasol%20Princesas%20Cenicienta.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1LvOw2M7HiXcpRq4wDYN7j17x_rMLkT2X" alt="Iluminador Trío Barbie" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Iluminador Trío Barbie</h3>
+                    <p class="product-hook">Trío de tonos dorados y champagne curados para el glow perfecto en cada piel.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tr%C3%ADo%20Barbie.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1WXGzwPkBsvekMxZD0mvJ0s0WaN1hda1w" alt="Iluminador Horneado Chocolate" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Iluminador Horneado Chocolate</h3>
+                    <p class="product-hook">Cuatro tonos horneados de luminosidad elegante para pómulos y lagrimal.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Horneado%20Chocolate.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/17JBbb-v2K0W0ylAabd9XOEe8NRljtf9z" alt="Jabon Detox" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jabon Detox</h3>
+                    <p class="product-hook">Limpieza profunda con carbón activado que purifica poros sin resecar.</p>
+                    <div class="product-price">$9.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Jabon%20Detox.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1GHkOPjOtnamD1j6M4AyUTK3xe62hMXy0" alt="Primer pop" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Primer pop</h3>
+                    <p class="product-hook">Prepara la piel suavizando poros y fijando tu base por mucho más tiempo.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Primer%20pop.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1K83qiibLWmzrOkZDKicrw--6C-iaNeO1" alt="Protector Solar Facial 40ml" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Protector Solar Facial 40ml</h3>
+                    <p class="product-hook">Protección SPF 50+ fluida y ligera que cuida tu piel del envejecimiento.</p>
+                    <div class="product-price">$40.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Protector%20Solar%20Facial%2040ml.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/15BEh-rYNvX51fg0ATw6ypK9-fJNNUYo7" alt="Rubor En Crema Happy" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Rubor En Crema Happy</h3>
+                    <p class="product-hook">Calidez y viveza instantánea en tus mejillas con pigmentación de alta calidad.</p>
+                    <div class="product-price">$10.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20En%20Crema%20Happy.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1ugYH13StAdETeRw91wHEInT8tFbdbJhY" alt="Rubor Líquido Beverly Hills" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Rubor Líquido Beverly Hills</h3>
+                    <p class="product-hook">Acabado terciopelo de fácil difuminado para un rubor radiante y natural.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20L%C3%ADquido%20Beverly%20Hills.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="LABIOS" class="category-title">LABIOS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/17EanIT7ib4gW7M3rIRUC4qWeCnb-2hzB" alt="Brillo Aura Tono 2" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Aura Tono 2</h3>
+                    <p class="product-hook">Efecto espejo ultra jugoso con aplicador de gran tamaño para labios deslumbrantes.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%202.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1KTTf1RA0bbNg5kE80P_lpd2fD8y9UBff" alt="Brillo Aura Tono 4" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Aura Tono 4</h3>
+                    <p class="product-hook">Volumen y brillo cristalino de textura ligera para un acabado de revista.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%204.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/14O_tQZpkZ-kT45j7jVXMFEC1nb-XhFCX" alt="Brillo Aura Tono 5" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Aura Tono 5</h3>
+                    <p class="product-hook">Toque de color con máximo brillo tipo gloss sin sensación pegajosa.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%205.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/176R4UwP1BtHC2jaD9CnwQhrpXp4W_E6q" alt="Brillo escarcha Purpure" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo escarcha Purpure</h3>
+                    <p class="product-hook">Gloss de alto impacto con destellos atrevidos que potencian tus labios.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20escarcha%20Purpure.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1LfOr7DHY7qgf2YmC9KDb1-mUdpxJq0rF" alt="Brillo glitter" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo glitter</h3>
+                    <p class="product-hook">Luminosidad pura y volumen tentador con acabado espejo de alta duración.</p>
+                    <div class="product-price">$10.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20glitter.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1tFTzmAGxv_lQdSAGaTvKlAeIA4CkIUBC" alt="Brillo Gloss Ariel Rojo" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Gloss Ariel Rojo</h3>
+                    <p class="product-hook">Hidratación profunda con un toque de luz roja vibrante para tus labios.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Rojo.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1gws2t5OhR5wWqEDAtVgYdIjimk1P53fA" alt="Brillo Gloss Ariel Caramelo" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Gloss Ariel Caramelo</h3>
+                    <p class="product-hook">Tono caramelo cálido con brillo radiante e hidratación prolongada.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Caramelo.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1paXrHu2Rt3NsJ18m0RQv5yZMpNA_KlOP" alt="Brillo Lip Oil Sandía Tono 02" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Lip Oil Sandía Tono 02</h3>
+                    <p class="product-hook">Nutrición con aroma a sandía y aplicador de silicona ideal para tus lip combos.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2002.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1NYYFdg8Kh1xtdFR7A6oib2qIP6eEDOuW" alt="Brillo Lip Oil Sandía Tono 03" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Lip Oil Sandía Tono 03</h3>
+                    <p class="product-hook">Brillo sedoso e hidratante sin alterar el color de tus labiales base.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1FZiNq8HPJPySjIkw7wNNQDb7jSZqHqwY" alt="Brillo Retro Kisses" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Retro Kisses</h3>
+                    <p class="product-hook">Reflejos tornasol retro para unos labios llenos de magia y juventud.</p>
+                    <div class="product-price">$8.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Retro%20Kisses.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1v-fGiicdjc7qeRbbS40RjbBpNLBh0oxa" alt="Brillo Lip Oil" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Lip Oil</h3>
+                    <p class="product-hook">Fórmula ultra hidratante de L.A. Colors para un brillo natural y saludable.</p>
+                    <div class="product-price">$8.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/118V61shNS36or7dlYm0qivSoLWgnBOwZ" alt="Brillo Twist Villanos" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brillo Twist Villanos</h3>
+                    <p class="product-hook">Suavidad acolchada con leve destello rosado para labios irresistibles.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Twist%20Villanos.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1O2Mb5XboD5TkVRaSUqg6rD3hjLkTANYq" alt="Kit Labios En Barra Princesas" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kit Labios En Barra Princesas</h3>
+                    <p class="product-hook">Dúo de delineador y labial cremoso para unos labios definidos con más volumen.</p>
+                    <div class="product-price">$25.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20Labios%20En%20Barra%20Princesas.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/14poYBV92IAcWMFYHPiaXq8i2xHWAGKJo" alt="Labial cat lips tono 06" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Labial cat lips tono 06</h3>
+                    <p class="product-hook">Bálsamo ultra suave que nutre e intensifica el tono natural de tus labios.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Labial%20cat%20lips%20tono%2006.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1YdGyyNkCblZKhpi_MKVlsr0KMMdPSTI5" alt="labial matte trendy -Tono 03, 07, 09, 12, 13, 15, 16, 19." loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">labial matte trendy -Tono 03, 07, 09, 12, 13, 15, 16, 19.</h3>
+                    <p class="product-hook">Color mate intramferible de secado rápido que no se cuartea y dura hasta 6 horas.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20labial%20matte%20trendy%20-Tono%2003%2C%2007%2C%2009%2C%2012%2C%2013%2C%2015%2C%2016%2C%2019..%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1bVR-pJFhDPWk3LNLvOl2AhPDvs1JbBUZ" alt="Labial y Delineador Glam Club  Tono 03" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Labial y Delineador Glam Club  Tono 03</h3>
+                    <p class="product-hook">El kit mate perfecto: delineador retráctil y labial líquido de larga duración.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Labial%20y%20Delineador%20Glam%20Club%20%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1ODv4PMCLZlQhrBQqDw73m4DzqW1l_cgd" alt="Tinta Soda" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Tinta Soda</h3>
+                    <p class="product-hook">Tinta acuosa de larga duración para un tono rojizo fresco y saludable en labios.</p>
+                    <div class="product-price">$10.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Tinta%20Soda.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="ACCESORIOS" class="category-title">ACCESORIOS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1Jr3kIn-7T1bYhSHtawDNTjFA-tIWMxJj" alt="Brocha y esponja" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Brocha y esponja</h3>
+                    <p class="product-hook">Dúo esencial compacto para una aplicación de maquillaje de nivel profesional.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brocha%20y%20esponja.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/16JsIT0v8EIwoaRkV39hZWjhGOEZg1LZQ" alt="Cepillo barbie." loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cepillo barbie.</h3>
+                    <p class="product-hook">Kit portátil de cepillo y scrunchie de Barbie para peinados rápidos con mucho estilo.</p>
+                    <div class="product-price">$8.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Cepillo%20barbie..%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1K631VS16ZYWTyJ67g5PsI3rzbtZFw02M" alt="Kit X 4 Mini Pomos" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kit X 4 Mini Pomos</h3>
+                    <p class="product-hook">Mini borlas ultra suaves diseñadas para sellar y difuminar en zonas difíciles.</p>
+                    <div class="product-price">$6.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%204%20Mini%20Pomos.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1NLMImaQO-8kCBtw9ID1yWmcKDZmaq7ms" alt="Luxe Clean Trendy" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Luxe Clean Trendy</h3>
+                    <p class="product-hook">Limpiador especializado para remover manchas de maquillaje en tu ropa al instante.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Luxe%20Clean%20Trendy.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1Z6ZdpDOylUfzQ2AKKyvYg_L2azVTa7bc" alt="Pin Forky" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pin Forky</h3>
+                    <p class="product-hook">Accesorio divertido de Toy Story para personalizar tus bolsos y cartucheras.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Forky.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1FKsFrxAdLokqVjiaB63c1MBtMO2d02W6" alt="Pin Marcianito" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pin Marcianito</h3>
+                    <p class="product-hook">Detalle único y lleno de color para darle estilo a tus prendas y accesorios.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marcianito.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1JW80K03-ZrIOFw9viERlCJEEfwcrohc4" alt="Pin Marranito Toy Story" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pin Marranito Toy Story</h3>
+                    <p class="product-hook">Pin coleccionable de alta calidad para un toque divertido en tu outfit.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marranito%20Toy%20Story.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1hdBrv4h_F8ih6v_0ws-v1M-BZkJyyqQX" alt="Pin Tiro Al Blanco" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pin Tiro Al Blanco</h3>
+                    <p class="product-hook">Estilo auténtico de Toy Story para decorar cosmetiqueras y chaquetas.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Tiro%20Al%20Blanco.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1AD5dRFe7v3wSHTR3g2DOc34SRkiEoXzR" alt="Pin Vaqueros" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pin Vaqueros</h3>
+                    <p class="product-hook">Accesorio de moda icónico para fanáticos de Disney y la moda retro.</p>
+                    <div class="product-price">$12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Vaqueros.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/17vcyu_I6_Bmy9CY3iS1eiOQkaV43eAjh" alt="Splash envidia" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash envidia</h3>
+                    <p class="product-hook">Fragancia sofisticada con acordes florales y frutales para un aura inolvidable.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20envidia.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/130Qlne_MXiQT4OyY2hWMwi1EwPaLuQOo" alt="Toallas Desmaquillantes Pool Party" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Toallas Desmaquillantes Pool Party</h3>
+                    <p class="product-hook">Remueven el maquillaje e impurezas dejando tu piel limpia, suave y fresca.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Toallas%20Desmaquillantes%20Pool%20Party.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="PESTAÑAS" class="category-title">PESTAÑAS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1lOVFuYH1sx6QkQNLgPgjwy11JBjPDMDr" alt="Eye lash serum" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Eye lash serum</h3>
+                    <p class="product-hook">Fórmula nutritiva que estimula el crecimiento natural de pestañas y cejas más densas.</p>
+                    <div class="product-price">$30.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Eye%20lash%20serum.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1TTYl-lE_RrqYZK1eAxLUzG6ozUNZnEvP" alt="Pegante de pestañas doble" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pegante de pestañas doble</h3>
+                    <p class="product-hook">Pegante dúo transparente y negro para pestañas y apliques de fácil fijación.</p>
+                    <div class="product-price">$17.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pegante%20de%20pesta%C3%B1as%20doble.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="CORPORAL" class="category-title">CORPORAL</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/16vFQGU9oZ42WqupXRovT71gdLAWwNL2b" alt="Iluminador corporal" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Iluminador corporal</h3>
+                    <p class="product-hook">Partículas violetas con efecto tornasol para deslumbrar con luz propia.</p>
+                    <div class="product-price">$15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20corporal.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="OJOS" class="category-title">OJOS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/12NMzuqXGly29JHSJ6-vMg7DP6NrSJIY6" alt="Kit X 2 Delineadores Stitch" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kit X 2 Delineadores Stitch</h3>
+                    <p class="product-hook">Dúo blanco y negro de larga duración e impermeables para trazos perfectos.</p>
+                    <div class="product-price">$25.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%202%20Delineadores%20Stitch.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1goDdzgBd2NdJuJyg0rv1Cdi1fNDVj89D" alt="Lápiz Delineador Ojos Safari (cafe)" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lápiz Delineador Ojos Safari (cafe)</h3>
+                    <p class="product-hook">Trazo café cremoso de alta intensidad para miradas cálidas y ahumadas.</p>
+                    <div class="product-price">$5.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20%28cafe%29.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1Ciueb8uIts6y_aNi_yomSuJia4kHV-QC" alt="Lápiz Delineador Ojos Safari (negro)" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lápiz Delineador Ojos Safari (negro)</h3>
+                    <p class="product-hook">Negro profundo de alta pigmentación para delinear o difuminar con precisión.</p>
+                    <div class="product-price">$5.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20%28negro%29.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="CEJAS" class="category-title">CEJAS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="https://lh3.googleusercontent.com/d/1LJMi0xBOkLu4BacOh9WGYVGoecnIyE0f" alt="Lápiz Para Cejas Beauty Glazed Tono 03" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=LUX+Beauty'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lápiz Para Cejas Beauty Glazed Tono 03</h3>
+                    <p class="product-hook">Doble punta de precisión para simular pelo a pelo y rellenar con acabado natural.</p>
+                    <div class="product-price">$20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Para%20Cejas%20Beauty%20Glazed%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 id="OTROS" class="category-title">OTROS</h2>
+        <div class="product-grid">
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>LUX | Cosméticos & Belleza</strong></p>
+        <p style="margin-top:5px;">Atención personalizada vía WhatsApp • Envíos seguros e inmediatos</p>
+    </footer>
+
+</body>
+</html>
