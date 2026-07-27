@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0045)file:///C:/Users/felip/Downloads/prueba2.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUX Selecta | Catálogo Oficial</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="./lux selecta final_files/css2" rel="stylesheet">
     <style>
         :root {
             --bg-color: #fbf9f6;
@@ -43,25 +43,33 @@
 
         header {
             text-align: center;
-            padding: 50px 20px 35px;
+            padding: 30px 20px 30px; /* Reducido el relleno superior e inferior */
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
             box-shadow: 0 4px 25px rgba(0,0,0,0.03);
         }
 
+        /* ------------------------------------------------------------- */
+        /* CONTENEDOR AJUSTADO Y COMPACTADO                             */
+        /* ------------------------------------------------------------- */
         .logo-container {
-            margin: 0 auto 12px;
-            width: 85px;
-            height: 85px;
+            margin: 0 auto 0px; /* Se elimina margen inferior para pegar el texto al colibrí */
+            width: 500px;      /* Mantiene tu ancho de 500px */
+            height: 220px;     /* Reducido de 500px a 220px para recortar el espacio transparente vertical */
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
 
-        .logo-svg {
-            width: 100%;
-            height: 100%;
+        .logo-real {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            transform: scale(1.25); /* Ligero zoom para aprovechar mejor el lienzo */
         }
 
         .brand-title {
@@ -71,6 +79,7 @@
             color: var(--text-primary);
             font-weight: 500;
             text-transform: uppercase;
+            margin-top: -10px; /* Sube ligeramente la tipografía hacia el logo */
             margin-bottom: 2px;
         }
 
@@ -230,7 +239,6 @@
             font-weight: 300;
         }
 
-        /* Ajuste de Precios: Más sutiles, elegantes y pequeños */
         .product-price {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem;
@@ -293,6 +301,11 @@
             .product-info { padding: 12px; }
             .product-name { font-size: 0.88rem; }
             .product-price { font-size: 0.88rem; }
+            
+            .logo-container {
+                width: 100%;
+                height: 160px;
+            }
         }
     </style>
 </head>
@@ -300,39 +313,22 @@
 
     <header>
         <div class="logo-container">
-            <!-- Logo Colibrí Vectorizado de LUX Selecta -->
-            <svg class="logo-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g transform="translate(0, -5)">
-                    <!-- Pico largo estilizado -->
-                    <path d="M 100,82 C 112,78 135,70 158,62 C 145,72 130,80 120,85 Z" fill="#C5A059"/>
-                    <!-- Cabeza y Ojo -->
-                    <path d="M 100,82 C 92,78 84,82 80,90 C 88,90 95,87 100,82 Z" fill="#1A1A1A"/>
-                    <circle cx="88" cy="85" r="2" fill="#FFFFFF"/>
-                    <!-- Ala superior expansiva -->
-                    <path d="M 88,88 C 70,60 45,35 25,25 C 40,48 65,75 80,95 Z" fill="#C5A059"/>
-                    <path d="M 80,92 C 60,68 38,48 20,40 C 35,58 58,82 72,102 Z" fill="#C58B7E" opacity="0.85"/>
-                    <!-- Cuerpo -->
-                    <path d="M 80,90 C 82,105 88,125 95,145 C 92,125 86,110 80,90 Z" fill="#C5A059"/>
-                    <!-- Cola elegante extendida -->
-                    <path d="M 95,145 C 102,168 110,185 118,195 C 108,180 100,162 95,145 Z" fill="#C58B7E"/>
-                    <path d="M 95,145 C 90,165 82,182 72,192 C 82,178 90,160 95,145 Z" fill="#C5A059"/>
-                </g>
-            </svg>
+            <img src="BRANDING/LOGO LUX.png" alt="LUX Selecta Logo" class="logo-real">
         </div>
         <h1 class="brand-title">LUX</h1>
-        <p class="brand-subtitle">SELECTA | CURADURÍA & ESENCIA</p>
+        <p class="brand-subtitle">SELECTA | CURADURÍA &amp; ESENCIA</p>
         <div class="welcome-msg">
             "La belleza es curaduría. Seleccionamos lo mejor para tu estándar más alto."
         </div>
     </header>
 
     <nav class="nav-categories">
-        <a href="#ROSTRO" class="nav-btn">ROSTRO</a>
-        <a href="#LABIOS" class="nav-btn">LABIOS</a>
-        <a href="#ACCESORIOS" class="nav-btn">ACCESORIOS</a>
-        <a href="#PESTAÑAS" class="nav-btn">PESTAÑAS</a>
-        <a href="#CORPORAL" class="nav-btn">CORPORAL</a>
-        <a href="#OJOS" class="nav-btn">OJOS</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#ROSTRO" class="nav-btn">ROSTRO</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#LABIOS" class="nav-btn">LABIOS</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#ACCESORIOS" class="nav-btn">ACCESORIOS</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#PESTA%C3%91AS" class="nav-btn">PESTAÑAS</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#CORPORAL" class="nav-btn">CORPORAL</a>
+        <a href="file:///C:/Users/felip/Downloads/prueba2.html#OJOS" class="nav-btn">OJOS</a>
     </nav>
 
     <main class="container">
@@ -342,7 +338,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Polvo De Hadas Ref PH03.webp" alt="Polvo De Hadas Ref PH03" loading="lazy">
+                    <img src="./lux selecta final_files/Polvo De Hadas.jpg" alt="Polvo De Hadas Ref PH03" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Polvo De Hadas Ref PH03</h3>
@@ -355,7 +351,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Polvo De Hadas Golden.webp" alt="Polvo De Hadas Golden" loading="lazy">
+                    <img src="./lux selecta final_files/Polvo De Hadas Golden.jpg" alt="Polvo De Hadas Golden" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Polvo De Hadas Golden</h3>
@@ -368,7 +364,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Base Aura Tono 3 - 4.webp" alt="Base Aura Tono 3 - 4" loading="lazy">
+                    <img src="./lux selecta final_files/Base Aura Tono 3 - 4.jpg" alt="Base Aura Tono 3 - 4" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Base Aura Tono 3 - 4</h3>
@@ -381,7 +377,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Contorno En Crema Queen.webp" alt="Contorno En Crema Queen" loading="lazy">
+                    <img src="./lux selecta final_files/Contorno En Crema Queen.jpg" alt="Contorno En Crema Queen" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Contorno En Crema Queen</h3>
@@ -394,7 +390,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Corrector rosado Barbie.webp" alt="Corrector rosado Barbie" loading="lazy">
+                    <img src="./lux selecta final_files/Corrector rosado Barbie.jpg" alt="Corrector rosado Barbie" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Corrector rosado Barbie</h3>
@@ -407,7 +403,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Fijador Dreams.webp" alt="Fijador Dreams" loading="lazy">
+                    <img src="./lux selecta final_files/Fijador Dreams.jpg" alt="Fijador Dreams" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Fijador Dreams</h3>
@@ -420,7 +416,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Iluminador Tornasol Princesas Cenicienta.webp" alt="Iluminador Tornasol Princesas Cenicienta" loading="lazy">
+                    <img src="./lux selecta final_files/Iluminador Tornasol Princesas Cenicienta.jpg" alt="Iluminador Tornasol Princesas Cenicienta" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Iluminador Tornasol Princesas Cenicienta</h3>
@@ -433,7 +429,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Iluminador Trío Barbie.webp" alt="Iluminador Trío Barbie" loading="lazy">
+                    <img src="./lux selecta final_files/Iluminador Trío Barbie.jpg" alt="Iluminador Trío Barbie" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Iluminador Trío Barbie</h3>
@@ -446,7 +442,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Iluminador Horneado Chocolate.webp" alt="Iluminador Horneado Chocolate" loading="lazy">
+                    <img src="./lux selecta final_files/Iluminador Horneado Chocolate.jpg" alt="Iluminador Horneado Chocolate" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Iluminador Horneado Chocolate</h3>
@@ -459,7 +455,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Jabon Detox.webp" alt="Jabon Detox" loading="lazy">
+                    <img src="./lux selecta final_files/Jabon Detox.jpg" alt="Jabon Detox" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Jabon Detox</h3>
@@ -472,7 +468,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Primer pop.webp" alt="Primer pop" loading="lazy">
+                    <img src="./lux selecta final_files/Primer pop.jpg" alt="Primer pop" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Primer pop</h3>
@@ -485,7 +481,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Protector Solar Facial 40ml.webp" alt="Protector Solar Facial 40ml" loading="lazy">
+                    <img src="./lux selecta final_files/Protector Solar Facial 40ml.jpg" alt="Protector Solar Facial 40ml" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Protector Solar Facial 40ml</h3>
@@ -498,7 +494,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Rubor En Crema Happy.webp" alt="Rubor En Crema Happy" loading="lazy">
+                    <img src="./lux selecta final_files/Rubor En Crema Happy.jpg" alt="Rubor En Crema Happy" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Rubor En Crema Happy</h3>
@@ -511,7 +507,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Rubor Líquido Beverly Hills.webp" alt="Rubor Líquido Beverly Hills" loading="lazy">
+                    <img src="./lux selecta final_files/Rubor Líquido Beverly Hills.jpg" alt="Rubor Líquido Beverly Hills" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Rubor Líquido Beverly Hills</h3>
@@ -528,7 +524,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Aura Tono 2.webp" alt="Brillo Aura Tono 2" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Aura Tono 2.jpg" alt="Brillo Aura Tono 2" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Aura Tono 2</h3>
@@ -541,7 +537,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Aura Tono 4.webp" alt="Brillo Aura Tono 4" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Aura Tono 4.jpg" alt="Brillo Aura Tono 4" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Aura Tono 4</h3>
@@ -554,7 +550,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Aura Tono 5.webp" alt="Brillo Aura Tono 5" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Aura Tono 5.jpg" alt="Brillo Aura Tono 5" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Aura Tono 5</h3>
@@ -567,7 +563,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo escarcha Purpure.webp" alt="Brillo escarcha Purpure" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo escarcha Purpure.jpg" alt="Brillo escarcha Purpure" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo escarcha Purpure</h3>
@@ -580,7 +576,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo glitter.webp" alt="Brillo glitter" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo glitter.jpg" alt="Brillo glitter" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo glitter</h3>
@@ -593,7 +589,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Gloss Ariel Rojo.webp" alt="Brillo Gloss Ariel Rojo" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Gloss Ariel Rojo.jpg" alt="Brillo Gloss Ariel Rojo" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Gloss Ariel Rojo</h3>
@@ -606,7 +602,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Gloss Ariel Caramelo.webp" alt="Brillo Gloss Ariel Caramelo" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Gloss Ariel Caramelo.jpg" alt="Brillo Gloss Ariel Caramelo" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Gloss Ariel Caramelo</h3>
@@ -619,7 +615,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Lip Oil Sandía Tono 02.webp" alt="Brillo Lip Oil Sandía Tono 02" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Lip Oil Sandía Tono 02.jpg" alt="Brillo Lip Oil Sandía Tono 02" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Lip Oil Sandía Tono 02</h3>
@@ -632,7 +628,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Lip Oil Sandía Tono 03.webp" alt="Brillo Lip Oil Sandía Tono 03" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Lip Oil Sandía Tono 03.jpg" alt="Brillo Lip Oil Sandía Tono 03" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Lip Oil Sandía Tono 03</h3>
@@ -645,7 +641,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Retro Kisses.webp" alt="Brillo Retro Kisses" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Retro Kisses.jpg" alt="Brillo Retro Kisses" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Retro Kisses</h3>
@@ -658,7 +654,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Lip Oil.webp" alt="Brillo Lip Oil" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Lip Oil.jpg" alt="Brillo Lip Oil" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Lip Oil</h3>
@@ -671,7 +667,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Twist Villanos.webp" alt="Brillo Twist Villanos" loading="lazy">
+                    <img src="./lux selecta final_files/Brillo Twist Villanos.jpg" alt="Brillo Twist Villanos" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo Twist Villanos</h3>
@@ -684,7 +680,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Kit Labios En Barra Princesas.webp" alt="Kit Labios En Barra Princesas" loading="lazy">
+                    <img src="./lux selecta final_files/Kit Labios En Barra Princesa.jpg" alt="Kit Labios En Barra Princesas" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Kit Labios En Barra Princesas</h3>
@@ -697,7 +693,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Labial cat lips tono 06.webp" alt="Labial cat lips tono 06" loading="lazy">
+                    <img src="./lux selecta final_files/Labial cat lips tono 06.jpg" alt="Labial cat lips tono 06" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Labial cat lips tono 06</h3>
@@ -710,7 +706,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/labial matte trendy.webp" alt="labial matte trendy" loading="lazy">
+                    <img src="./lux selecta final_files/labial matte trendy - Tono 03, 07, 09, 12, 13, 15, 16, 19.jpg" alt="labial matte trendy" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">labial matte trendy</h3>
@@ -723,7 +719,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Labial y Delineador Glam Club Tono 03.webp" alt="Labial y Delineador Glam Club Tono 03" loading="lazy">
+                    <img src="./lux selecta final_files/Labial y Delineador Glam Club Tono 03.jpg" alt="Labial y Delineador Glam Club Tono 03" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Labial y Delineador Glam Club Tono 03</h3>
@@ -736,7 +732,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Tinta Soda.webp" alt="Tinta Soda" loading="lazy">
+                    <img src="./lux selecta final_files/Tinta Soda.jpg" alt="Tinta Soda" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Tinta Soda</h3>
@@ -753,7 +749,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brocha y esponja.webp" alt="Brocha y esponja" loading="lazy">
+                    <img src="./lux selecta final_files/Brocha y esponja.jpg" alt="Brocha y esponja" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brocha y esponja</h3>
@@ -766,7 +762,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Cepillo barbie.webp" alt="Cepillo barbie" loading="lazy">
+                    <img src="./lux selecta final_files/Cepillo barbie.jpg" alt="Cepillo barbie" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Cepillo barbie</h3>
@@ -779,7 +775,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Kit X 4 Mini Pomos.webp" alt="Kit X 4 Mini Pomos" loading="lazy">
+                    <img src="./lux selecta final_files/Kit X 4 Mini Pomos.jpg" alt="Kit X 4 Mini Pomos" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Kit X 4 Mini Pomos</h3>
@@ -792,7 +788,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Luxe Clean Trendy.webp" alt="Luxe Clean Trendy" loading="lazy">
+                    <img src="./lux selecta final_files/Luxe Clean Trendy.jpg" alt="Luxe Clean Trendy" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Luxe Clean Trendy</h3>
@@ -805,7 +801,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Forky.webp" alt="Pin Forky" loading="lazy">
+                    <img src="./lux selecta final_files/Pin Forky Toy Story.jpg" alt="Pin Forky" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pin Forky</h3>
@@ -818,7 +814,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Marcianito.webp" alt="Pin Marcianito" loading="lazy">
+                    <img src="./lux selecta final_files/Pin Marcianito Toy Story.jpg" alt="Pin Marcianito" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pin Marcianito</h3>
@@ -831,7 +827,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Marranito Toy Story.webp" alt="Pin Marranito Toy Story" loading="lazy">
+                    <img src="./lux selecta final_files/Pin Marranito Toy Story.jpg" alt="Pin Marranito Toy Story" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pin Marranito Toy Story</h3>
@@ -844,7 +840,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Tiro Al Blanco.webp" alt="Pin Tiro Al Blanco" loading="lazy">
+                    <img src="./lux selecta final_files/Pin Tiro Al Blanco Toy Story.jpg" alt="Pin Tiro Al Blanco" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pin Tiro Al Blanco</h3>
@@ -857,7 +853,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Vaqueros.webp" alt="Pin Vaqueros" loading="lazy">
+                    <img src="./lux selecta final_files/Pin Vaqueros Toy Story.jpg" alt="Pin Vaqueros" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pin Vaqueros</h3>
@@ -870,7 +866,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Splash envidia.webp" alt="Splash envidia" loading="lazy">
+                    <img src="./lux selecta final_files/Splash envidia.jpg" alt="Splash envidia" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Splash envidia</h3>
@@ -883,7 +879,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Toallas Desmaquillantes Pool Party.webp" alt="Toallas Desmaquillantes Pool Party" loading="lazy">
+                    <img src="./lux selecta final_files/Toallas Desmaquillantes Pool Party.jpg" alt="Toallas Desmaquillantes Pool Party" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Toallas Desmaquillantes Pool Party</h3>
@@ -900,7 +896,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Eye lash serum.webp" alt="Eye lash serum" loading="lazy">
+                    <img src="./lux selecta final_files/Eye lash serum.jpg" alt="Eye lash serum" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Eye lash serum</h3>
@@ -913,7 +909,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pegante de pestañas doble.webp" alt="Pegante de pestañas doble" loading="lazy">
+                    <img src="./lux selecta final_files/Pegante de pestañas doble.jpg" alt="Pegante de pestañas doble" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pegante de pestañas doble</h3>
@@ -930,7 +926,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Iluminador corporal.webp" alt="Iluminador corporal" loading="lazy">
+                    <img src="./lux selecta final_files/Iluminador corporal.jpg" alt="Iluminador corporal" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Iluminador corporal</h3>
@@ -947,7 +943,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Kit X 2 Delineadores Stitch.webp" alt="Kit X 2 Delineadores Stitch" loading="lazy">
+                    <img src="./lux selecta final_files/Kit X 2 Delineadores Stitch.jpg" alt="Kit X 2 Delineadores Stitch" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Kit X 2 Delineadores Stitch</h3>
@@ -960,7 +956,7 @@
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Lápiz Delineador Ojos Safari (cafe).webp" alt="Lápiz Delineador Ojos Safari (cafe)" loading="lazy">
+                    <img src="./lux selecta final_files/Lápiz Delineador Ojos Safari (cafe).jpg" alt="Lápiz Delineador Ojos Safari (cafe)" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Lápiz Delineador Ojos Safari (cafe)</h3>
@@ -973,8 +969,8 @@
     </main>
 
     <footer>
-        <p>© 2026 <strong>LUX Selecta</strong>. Curaduría & Esencia. Todos los derechos reservados.</p>
+        <p>© 2026 <strong>LUX Selecta</strong>. Curaduría &amp; Esencia. Todos los derechos reservados.</p>
     </footer>
 
-</body>
-</html>
+
+</body></html>
