@@ -4,7 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUX Selecta | Catálogo Oficial</title>
-    <link href="./lux selecta final_files/css2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #fbf9f6;
@@ -235,13 +237,19 @@
             font-weight: 300;
         }
 
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
         .product-price {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem;
             font-weight: 500;
             color: var(--accent-gold);
             letter-spacing: 1px;
-            margin-bottom: 12px;
             display: flex;
             align-items: center;
             gap: 4px;
@@ -253,6 +261,12 @@
             color: var(--text-secondary);
             font-weight: 400;
             letter-spacing: 0.5px;
+        }
+
+        .old-price {
+            font-size: 0.78rem;
+            color: #999;
+            text-decoration: line-through;
         }
 
         .btn-wa {
@@ -323,14 +337,17 @@
         <a href="#LABIOS" class="nav-btn">LABIOS</a>
         <a href="#ACCESORIOS" class="nav-btn">ACCESORIOS</a>
         <a href="#PESTAÑAS" class="nav-btn">PESTAÑAS</a>
-        <a href="#CORPORAL" class="nav-btn">CORPORAL</a>
         <a href="#OJOS" class="nav-btn">OJOS</a>
+        <a href="#CEJAS" class="nav-btn">CEJAS</a>
+        <a href="#CORPORAL" class="nav-btn">CORPORAL</a>
     </nav>
 
     <main class="container">
+
         <!-- ROSTRO -->
         <h2 id="ROSTRO" class="category-title">ROSTRO</h2>
         <div class="product-grid">
+
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
@@ -339,8 +356,11 @@
                 <div class="product-info">
                     <h3 class="product-name">Base Aura Tono 3 - 4</h3>
                     <p class="product-hook">Cobertura mate impecable y construible sin sensación pesada todo el día.</p>
-                    <div class="product-price">30.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Base%20Aura%20Tono%203%20-%204%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <div class="price-container">
+                        <div class="product-price">27.000</div>
+                        <span class="old-price">COP 30.000</span>
+                    </div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Base%20Aura%20Tono%203%20-%204%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -353,7 +373,7 @@
                     <h3 class="product-name">Contorno En Crema Queen</h3>
                     <p class="product-hook">Esculpido facial de precisión profesional con aplicador de esponja ultra suave.</p>
                     <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Contorno%20En%20Crema%20Queen%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Contorno%20En%20Crema%20Queen%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -366,7 +386,7 @@
                     <h3 class="product-name">Corrector rosado Barbie</h3>
                     <p class="product-hook">Neutraliza y da luz a la mirada cancelando tonos oscuros en las ojeras.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Corrector%20rosado%20Barbie%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Corrector%20rosado%20Barbie%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -379,7 +399,7 @@
                     <h3 class="product-name">Fijador Dreams</h3>
                     <p class="product-hook">Fijación prolongada con hidratación de aloe vera y pepino sin efecto pesado.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Fijador%20Dreams%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Fijador%20Dreams%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -392,7 +412,7 @@
                     <h3 class="product-name">Iluminador Horneado Chocolate</h3>
                     <p class="product-hook">Cuatro tonos horneados de luminosidad elegante para pómulos y lagrimal.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Horneado%20Chocolate%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Iluminador%20Horneado%20Chocolate%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -405,7 +425,7 @@
                     <h3 class="product-name">Iluminador Tornasol Princesas Cenicienta</h3>
                     <p class="product-hook">Destellos de cuento de hadas para puntos de luz mágicos en tu rostro.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tornasol%20Princesas%20Cenicienta%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Iluminador%20Tornasol%20Princesas%20Cenicienta%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -418,7 +438,72 @@
                     <h3 class="product-name">Iluminador Trío Barbie</h3>
                     <p class="product-hook">Trío de tonos dorados y champagne curados para el glow perfecto en cada piel.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tri%CC%81o%20Barbie%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Iluminador%20Tr%C3%ADo%20Barbie%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Torre Multi Iluminador.jpg" alt="Torre Multi Iluminador" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Torre Multi Iluminador</h3>
+                    <p class="product-hook">Torre de 4 iluminadores de alta pigmentación con glitter en gel tornasol.</p>
+                    <div class="product-price">20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Torre%20Multi%20Iluminador%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Jelly Glow plateado.jpg" alt="Jelly Glow plateado" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jelly Glow plateado</h3>
+                    <p class="product-hook">Iluminador en barra de acabado plata para un glow jugoso, fresco y natural.</p>
+                    <div class="product-price">16.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Jelly%20Glow%20plateado%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Jelly Glow dorado.jpg" alt="Jelly Glow dorado" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jelly Glow dorado</h3>
+                    <p class="product-hook">Iluminador en barra dorado que realza tus facciones con un brillo radiante.</p>
+                    <div class="product-price">16.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Jelly%20Glow%20dorado%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Jelly Glow azul.jpg" alt="Jelly Glow azul" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jelly Glow azul</h3>
+                    <p class="product-hook">Reflejos tornasol fríos de tendencia para resaltar con un toque único.</p>
+                    <div class="product-price">16.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Jelly%20Glow%20azul%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Jelly Glow Rosado.jpg" alt="Jelly Glow Rosado" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jelly Glow Rosado</h3>
+                    <p class="product-hook">Destellos rosados luminosos y textura suave que funde perfecto en la piel.</p>
+                    <div class="product-price">16.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Jelly%20Glow%20Rosado%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -431,7 +516,33 @@
                     <h3 class="product-name">Jabon Detox</h3>
                     <p class="product-hook">Limpieza profunda con carbón activado que purifica poros sin resecar.</p>
                     <div class="product-price">9.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Jabon%20Detox%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Jabon%20Detox%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Agua micelar Pepino y Manzanilla.jpg" alt="Agua micelar Pepino y Manzanilla" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Agua micelar Pepino y Manzanilla</h3>
+                    <p class="product-hook">Limpieza suave que desmaquilla, tonifica y calma las pieles más delicadas.</p>
+                    <div class="product-price">22.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Agua%20micelar%20Pepino%20y%20Manzanilla%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Espuma Facial Hamamelis.jpg" alt="Espuma Facial Hamamelis" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Espuma Facial Hamamelis</h3>
+                    <p class="product-hook">Controla el exceso de grasa y brillo, dejando un cutis mate, limpio y fresco.</p>
+                    <div class="product-price">23.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Espuma%20Facial%20Hamamelis%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -444,33 +555,33 @@
                     <h3 class="product-name">Polvo De Hadas Golden</h3>
                     <p class="product-hook">Destellos dorados de alta precisión para un glow de impacto en piel y escote.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas%20Golden%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Polvo%20De%20Hadas%20Golden%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Polvo De Hadas.jpg" alt="Polvo De Hadas Ref PH03" loading="lazy">
+                    <img src="IMAGENES PRODUCTOS/Polvo De Hadas.jpg" alt="Polvo De Hadas" loading="lazy">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Polvo De Hadas Ref PH03</h3>
+                    <h3 class="product-name">Polvo De Hadas</h3>
                     <p class="product-hook">Luminosidad mágica e instantánea en rostro y cuerpo con acabado dorado radiante.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas%20Ref%20PH03%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Polvo%20De%20Hadas%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Primer Pop.jpg" alt="Primer pop" loading="lazy">
+                    <img src="IMAGENES PRODUCTOS/Primer Pop.jpg" alt="Primer Pop" loading="lazy">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Primer pop</h3>
+                    <h3 class="product-name">Primer Pop</h3>
                     <p class="product-hook">Prepara la piel suavizando poros y fijando tu base por mucho más tiempo.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Primer%20pop%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Primer%20Pop%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -483,7 +594,7 @@
                     <h3 class="product-name">Protector Solar Facial 40ml</h3>
                     <p class="product-hook">Protección SPF 50+ fluida y ligera que cuida tu piel del envejecimiento.</p>
                     <div class="product-price">40.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Protector%20Solar%20Facial%2040ml%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Protector%20Solar%20Facial%2040ml%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -496,7 +607,7 @@
                     <h3 class="product-name">Rubor En Crema Happy</h3>
                     <p class="product-hook">Calidez y viveza instantánea en tus mejillas con pigmentación de alta calidad.</p>
                     <div class="product-price">10.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20En%20Crema%20Happy%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Rubor%20En%20Crema%20Happy%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -509,14 +620,16 @@
                     <h3 class="product-name">Rubor Líquido Beverly Hills</h3>
                     <p class="product-hook">Acabado terciopelo de fácil difuminado para un rubor radiante y natural.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20Li%CC%81quido%20Beverly%20Hills%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Rubor%20L%C3%ADquido%20Beverly%20Hills%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
+
         </div>
 
         <!-- LABIOS -->
         <h2 id="LABIOS" class="category-title">LABIOS</h2>
         <div class="product-grid">
+
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
@@ -526,7 +639,7 @@
                     <h3 class="product-name">Brillo Aura Tono 2</h3>
                     <p class="product-hook">Efecto espejo ultra jugoso con aplicador de gran tamaño para labios deslumbrantes.</p>
                     <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%202%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Aura%20Tono%202%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -539,7 +652,7 @@
                     <h3 class="product-name">Brillo Aura Tono 4</h3>
                     <p class="product-hook">Volumen y brillo cristalino de textura ligera para un acabado de revista.</p>
                     <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%204%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Aura%20Tono%204%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -552,20 +665,20 @@
                     <h3 class="product-name">Brillo Aura Tono 5</h3>
                     <p class="product-hook">Toque de color con máximo brillo tipo gloss sin sensación pegajosa.</p>
                     <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%205%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Aura%20Tono%205%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Brillo Escarcha Purpure.jpg" alt="Brillo escarcha Purpure" loading="lazy">
+                    <img src="IMAGENES PRODUCTOS/Brillo escarcha Purpure.jpg" alt="Brillo escarcha Purpure" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Brillo escarcha Purpure</h3>
                     <p class="product-hook">Gloss de alto impacto con destellos atrevidos que potencian tus labios.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20escarcha%20Purpure%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20escarcha%20Purpure%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -578,7 +691,7 @@
                     <h3 class="product-name">Brillo glitter</h3>
                     <p class="product-hook">Luminosidad pura y volumen tentador con acabado espejo de alta duración.</p>
                     <div class="product-price">10.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20glitter%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20glitter%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -591,7 +704,7 @@
                     <h3 class="product-name">Brillo Gloss Ariel Caramelo</h3>
                     <p class="product-hook">Tono caramelo cálido con brillo radiante e hidratación prolongada.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Caramelo%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Gloss%20Ariel%20Caramelo%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -604,7 +717,7 @@
                     <h3 class="product-name">Brillo Gloss Ariel Rojo</h3>
                     <p class="product-hook">Hidratación profunda con un toque de luz roja vibrante para tus labios.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Rojo%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Gloss%20Ariel%20Rojo%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -617,7 +730,7 @@
                     <h3 class="product-name">Brillo Lip Oil</h3>
                     <p class="product-hook">Fórmula ultra hidratante de L.A. Colors para un brillo natural y saludable.</p>
                     <div class="product-price">8.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Lip%20Oil%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -630,7 +743,7 @@
                     <h3 class="product-name">Brillo Lip Oil Sandía Tono 02</h3>
                     <p class="product-hook">Nutrición con aroma a sandía y aplicador de silicona ideal para tus lip combos.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2002%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2002%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -643,7 +756,7 @@
                     <h3 class="product-name">Brillo Lip Oil Sandía Tono 03</h3>
                     <p class="product-hook">Brillo sedoso e hidratante sin alterar el color de tus labiales base.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2003%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2003%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -656,7 +769,7 @@
                     <h3 class="product-name">Brillo Retro Kisses</h3>
                     <p class="product-hook">Reflejos tornasol retro para unos labios llenos de magia y juventud.</p>
                     <div class="product-price">8.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Retro%20Kisses%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Retro%20Kisses%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -669,14 +782,81 @@
                     <h3 class="product-name">Brillo Twist Villanos</h3>
                     <p class="product-hook">Suavidad acolchada con leve destello rosado para labios irresistibles.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Twist%20Villanos%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brillo%20Twist%20Villanos%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Kit Labios En Barra Princesas.jpg" alt="Kit Labios En Barra Princesas" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kit Labios En Barra Princesas</h3>
+                    <p class="product-hook">Dúo de delineador retráctil y labial cremoso para labios definidos y con volumen.</p>
+                    <div class="product-price">25.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Kit%20Labios%20En%20Barra%20Princesas%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Labial cat lips tono 06.jpg" alt="Labial cat lips tono 06" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Labial cat lips tono 06</h3>
+                    <p class="product-hook">Bálsamo ultra suave que nutre e intensifica el tono natural de tus labios.</p>
+                    <div class="product-price">15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Labial%20cat%20lips%20tono%2006%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/labial matte trendy - Tono 03, 07, 09, 12, 13, 15, 16, 19.jpg" alt="Labial matte Trendy" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Labial Matte Trendy</h3>
+                    <p class="product-hook">Color mate intransferible de secado rápido que no se cuartea y dura hasta 6 horas.</p>
+                    <div class="product-price">15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Labial%20Matte%20Trendy%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Labial y Delineador Glam Club  Tono 03.jpg" alt="Labial y Delineador Glam Club Tono 03" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Labial y Delineador Glam Club Tono 03</h3>
+                    <p class="product-hook">El kit mate perfecto: delineador retráctil y labial líquido de larga duración.</p>
+                    <div class="product-price">12.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Labial%20y%20Delineador%20Glam%20Club%20Tono%2003%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Tinta Soda.jpg" alt="Tinta Soda" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Tinta Soda</h3>
+                    <p class="product-hook">Tinta acuosa de larga duración para un tono rojizo fresco y saludable en labios.</p>
+                    <div class="product-price">10.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Tinta%20Soda%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
         </div>
 
         <!-- ACCESORIOS -->
         <h2 id="ACCESORIOS" class="category-title">ACCESORIOS</h2>
         <div class="product-grid">
+
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
@@ -686,7 +866,7 @@
                     <h3 class="product-name">Brocha y esponja</h3>
                     <p class="product-hook">Dúo esencial compacto para una aplicación de maquillaje de nivel profesional.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Brocha%20y%20esponja%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Brocha%20y%20esponja%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -699,7 +879,7 @@
                     <h3 class="product-name">Cepillo barbie</h3>
                     <p class="product-hook">Kit portátil de cepillo y scrunchie de Barbie para peinados rápidos con mucho estilo.</p>
                     <div class="product-price">8.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Cepillo%20barbie%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Cepillo%20barbie%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -712,7 +892,7 @@
                     <h3 class="product-name">Kit X 4 Mini Pomos</h3>
                     <p class="product-hook">Mini borlas ultra suaves diseñadas para sellar y difuminar en zonas difíciles.</p>
                     <div class="product-price">6.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%204%20Mini%20Pomos%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Kit%20X%204%20Mini%20Pomos%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -725,7 +905,7 @@
                     <h3 class="product-name">Luxe Clean Trendy</h3>
                     <p class="product-hook">Limpiador especializado para remover manchas de maquillaje en tu ropa al instante.</p>
                     <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Luxe%20Clean%20Trendy%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Luxe%20Clean%20Trendy%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -738,7 +918,7 @@
                     <h3 class="product-name">Pin Forky Toy Story</h3>
                     <p class="product-hook">Accesorio divertido de Toy Story para personalizar tus bolsos y cartucheras.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Forky%20Toy%20Story%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pin%20Forky%20Toy%20Story%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -751,7 +931,7 @@
                     <h3 class="product-name">Pin Marcianito Toy Story</h3>
                     <p class="product-hook">Detalle único y lleno de color para darle estilo a tus prendas y accesorios.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marcianito%20Toy%20Story%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pin%20Marcianito%20Toy%20Story%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -764,20 +944,20 @@
                     <h3 class="product-name">Pin Marranito Toy Story</h3>
                     <p class="product-hook">Pin coleccionable de alta calidad para un toque divertido en tu outfit.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marranito%20Toy%20Story%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pin%20Marranito%20Toy%20Story%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Pin Tiro Al Blanco Toy Story.jpg" alt="Pin Tiro Al Blanco Toy Story" loading="lazy">
+                    <img src="IMAGENES PRODUCTOS/Pin Tiro Al Blanco.jpg" alt="Pin Tiro Al Blanco" loading="lazy">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Pin Tiro Al Blanco Toy Story</h3>
+                    <h3 class="product-name">Pin Tiro Al Blanco</h3>
                     <p class="product-hook">Estilo auténtico de Toy Story para decorar cosmetiqueras y chaquetas.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Tiro%20Al%20Blanco%20Toy%20Story%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pin%20Tiro%20Al%20Blanco%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -790,20 +970,7 @@
                     <h3 class="product-name">Pin Vaqueros Toy Story</h3>
                     <p class="product-hook">Accesorio de moda icónico para fanáticos de Disney y la moda retro.</p>
                     <div class="product-price">12.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Vaqueros%20Toy%20Story%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-container">
-                    <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Splash envidia.jpg" alt="Splash envidia" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Splash envidia</h3>
-                    <p class="product-hook">Fragancia sofisticada con acordes florales y frutales para un aura inolvidable.</p>
-                    <div class="product-price">20.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20envidia%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pin%20Vaqueros%20Toy%20Story%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -816,14 +983,16 @@
                     <h3 class="product-name">Toallas Desmaquillantes Pool Party</h3>
                     <p class="product-hook">Remueven el maquillaje e impurezas dejando tu piel limpia, suave y fresca.</p>
                     <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Toallas%20Desmaquillantes%20Pool%20Party%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Toallas%20Desmaquillantes%20Pool%20Party%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
+
         </div>
 
         <!-- PESTAÑAS -->
         <h2 id="PESTAÑAS" class="category-title">PESTAÑAS</h2>
         <div class="product-grid">
+
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
@@ -833,7 +1002,7 @@
                     <h3 class="product-name">Eye lash serum</h3>
                     <p class="product-hook">Fórmula nutritiva que estimula el crecimiento natural de pestañas y cejas más densas.</p>
                     <div class="product-price">30.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Eye%20lash%20serum%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Eye%20lash%20serum%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -846,31 +1015,16 @@
                     <h3 class="product-name">Pegante de pestañas doble</h3>
                     <p class="product-hook">Pegante dúo transparente y negro para pestañas y apliques de fácil fijación.</p>
                     <div class="product-price">17.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Pegante%20de%20pestana%CC%83s%20doble%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pegante%20de%20pesta%C3%B1as%20doble%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
-        </div>
 
-        <!-- CORPORAL -->
-        <h2 id="CORPORAL" class="category-title">CORPORAL</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="img-container">
-                    <span class="badge">LUX</span>
-                    <img src="IMAGENES PRODUCTOS/Iluminador corporal.jpg" alt="Iluminador corporal" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Iluminador corporal</h3>
-                    <p class="product-hook">Partículas violetas con efecto tornasol para deslumbrar con luz propia.</p>
-                    <div class="product-price">15.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20corporal%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
-                </div>
-            </div>
         </div>
 
         <!-- OJOS -->
         <h2 id="OJOS" class="category-title">OJOS</h2>
         <div class="product-grid">
+
             <div class="product-card">
                 <div class="img-container">
                     <span class="badge">LUX</span>
@@ -880,7 +1034,7 @@
                     <h3 class="product-name">Kit X 2 Delineadores Stitch</h3>
                     <p class="product-hook">Dúo blanco y negro de larga duración e impermeables para trazos perfectos.</p>
                     <div class="product-price">25.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%202%20Delineadores%20Stitch%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Kit%20X%202%20Delineadores%20Stitch%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
 
@@ -893,10 +1047,245 @@
                     <h3 class="product-name">Lápiz Delineador Ojos Safari (cafe)</h3>
                     <p class="product-hook">Trazo café cremoso de alta intensidad para miradas cálidas y ahumadas.</p>
                     <div class="product-price">5.000</div>
-                    <a href="https://wa.me/573153243483?text=Hola%20LUX%21%20Me%20interesa%20comprar%20el%20producto%3A%20La%CC%81piz%20Delineador%20Ojos%20Safari%20%28cafe%29%C2%BFTe%CC%81nen%20disponibilidad%20para%20envi%CC%81o%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20(cafe)%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
                 </div>
             </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Lápiz Delineador Ojos Safari (negro).jpg" alt="Lápiz Delineador Ojos Safari (negro)" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lápiz Delineador Ojos Safari (negro)</h3>
+                    <p class="product-hook">Negro profundo de alta pigmentación para delinear o difuminar con precisión.</p>
+                    <div class="product-price">5.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20(negro)%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Pestañina So Perfect Lash.jpg" alt="Pestañina So Perfect Lash" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pestañina So Perfect Lash</h3>
+                    <p class="product-hook">Alarga, aporta volumen impactante y es resistente al agua desde la primera pasada.</p>
+                    <div class="product-price">23.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Pesta%C3%B1ina%20So%20Perfect%20Lash%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Encrespador de Pestañas.jpg" alt="Encrespador de Pestañas" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Encrespador de Pestañas</h3>
+                    <p class="product-hook">Curvatura perfecta y natural en segundos sin maltratar tus pestañas.</p>
+                    <div class="product-price">10.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Encrespador%20de%20Pesta%C3%B1as%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
         </div>
+
+        <!-- CEJAS -->
+        <h2 id="CEJAS" class="category-title">CEJAS</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Lápiz Para Cejas Beauty Glazed Tono 03.jpg" alt="Lápiz Para Cejas Beauty Glazed Tono 03" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lápiz Para Cejas Beauty Glazed Tono 03</h3>
+                    <p class="product-hook">Doble punta de precisión para simular pelo a pelo y rellenar con acabado natural.</p>
+                    <div class="product-price">20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20L%C3%A1piz%20Para%20Cejas%20Beauty%20Glazed%20Tono%2003%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CORPORAL -->
+        <h2 id="CORPORAL" class="category-title">CORPORAL</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Iluminador corporal.jpg" alt="Iluminador corporal" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Iluminador corporal</h3>
+                    <p class="product-hook">Partículas violetas con efecto tornasol para deslumbrar con luz propia.</p>
+                    <div class="product-price">15.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Iluminador%20corporal%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Splash envidia.jpg" alt="Splash envidia" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash envidia</h3>
+                    <p class="product-hook">Fragancia sofisticada con acordes florales y frutales para un aura inolvidable.</p>
+                    <div class="product-price">20.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Splash%20envidia%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Splash Llavero Candy Bum.jpg" alt="Splash Llavero Candy Bum" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash Llavero Candy Bum</h3>
+                    <p class="product-hook">Fragancia capilar y corporal con dulce aroma a bombón y sutiles destellos luminosos.</p>
+                    <div class="product-price">24.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Splash%20Llavero%20Candy%20Bum%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Splash Llavero Choco Vibes.jpg" alt="Splash Llavero Choco Vibes" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash Llavero Choco Vibes</h3>
+                    <p class="product-hook">Aroma irresistible a chocolate con destellos radiantes en presentación llavero portátil.</p>
+                    <div class="product-price">24.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Splash%20Llavero%20Choco%20Vibes%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Splash Llavero Maracuyazo.jpg" alt="Splash Llavero Maracuyazo" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash Llavero Maracuyazo</h3>
+                    <p class="product-hook">Fragancia tropical fresca con notas cítricas jugosas y glow radiante para tu piel.</p>
+                    <div class="product-price">24.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Splash%20Llavero%20Maracuyazo%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Exfoliante Strawberry Azucar 350ml.jpg" alt="Exfoliante Strawberry Azucar 350ml" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Exfoliante Strawberry Azucar 350ml</h3>
+                    <p class="product-hook">Elimina suavemente células muertas dejando la piel renovada y con delicioso aroma a fresa.</p>
+                    <div class="product-price">28.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Exfoliante%20Strawberry%20Azucar%20350ml%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Kit Cartuchera Watermelon.jpg" alt="Kit Cartuchera Watermelon" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Kit Cartuchera Watermelon</h3>
+                    <p class="product-hook">Kit viajero revitalizante de sandía con splash mini, gel de ducha y mantequilla corporal.</p>
+                    <div class="product-price">40.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Kit%20Cartuchera%20Watermelon%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Mantequilla Corporal Candy Bum 220ml.jpg" alt="Mantequilla Corporal Candy Bum 220ml" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mantequilla Corporal Candy Bum 220ml</h3>
+                    <p class="product-hook">Hidratación intensiva con aroma a dulce bombón, libre de parabenos y siliconas.</p>
+                    <div class="product-price">26.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Mantequilla%20Corporal%20Candy%20Bum%20220ml%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Mantequilla Maracuyazo 220ml.jpg" alt="Mantequilla Maracuyazo 220ml" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mantequilla Maracuyazo 220ml</h3>
+                    <p class="product-hook">Textura ligera y energizante de maracuyá que nutre y perfuma tu piel todo el día.</p>
+                    <div class="product-price">26.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Mantequilla%20Maracuyazo%20220ml%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Mini Mantequilla Importada Choco Vibes 50g.jpg" alt="Mini Mantequilla Importada Choco Vibes 50g" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mini Mantequilla Choco Vibes 50g</h3>
+                    <p class="product-hook">Nutrición sedosa y brillo sutil con delicioso aroma a chocolate para llevar en el bolso.</p>
+                    <div class="product-price">13.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Mini%20Mantequilla%20Importada%20Choco%20Vibes%2050g%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Mini Mantequilla Importada Strawberry 50g.jpg" alt="Mini Mantequilla Importada Strawberry 50g" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mini Mantequilla Strawberry 50g</h3>
+                    <p class="product-hook">Hidratación profunda con aroma a fresa y partículas brillantes para lucir una piel radiante.</p>
+                    <div class="product-price">13.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Mini%20Mantequilla%20Importada%20Strawberry%2050g%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Stick Barra De Perfume Choco Vibes.jpg" alt="Stick Barra De Perfume Choco Vibes" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Stick Barra De Perfume Choco Vibes</h3>
+                    <p class="product-hook">Perfume en barra ultra práctico con aroma envolvente a chocolate para retocar donde sea.</p>
+                    <div class="product-price">18.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Stick%20Barra%20De%20Perfume%20Choco%20Vibes%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <span class="badge">LUX</span>
+                    <img src="IMAGENES PRODUCTOS/Splash Strawberry Imrportado 200ML.jpg" alt="Splash Strawberry Importado 200ML" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Splash Strawberry Importado 200ML</h3>
+                    <p class="product-hook">Explosión de frescura y aroma dulce a fresa ideal para el uso diario después del baño.</p>
+                    <div class="product-price">26.000</div>
+                    <a href="https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto:%20Splash%20Strawberry%20Imrportado%20200ML%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F" target="_blank" class="btn-wa">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
