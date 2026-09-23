@@ -1,0 +1,623 @@
+[
+  {
+    "nombre": "Base Aura Tono 3 - 4",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/REF3312 Base Aura Tono 3 - 4.jpg",
+    "gancho": "Cobertura mate impecable y construible sin sensación pesada todo el día.",
+    "precio": "30.000",
+    "precioDescuento": "27.000",
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Base%20Aura%20Tono%203%20-%204.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Aura Tono 2",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Aura Tono 2.jpg",
+    "gancho": "Efecto espejo ultra jugoso con aplicador de gran tamaño para labios deslumbrantes.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%202.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Aura Tono 4",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Aura Tono 4.jpg",
+    "gancho": "Volumen y brillo cristalino de textura ligera para un acabado de revista.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%204.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Aura Tono 5",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Aura Tono 5.jpg",
+    "gancho": "Toque de color con máximo brillo tipo gloss sin sensación pegajosa.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Aura%20Tono%205.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo escarcha Purpure",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo escarcha Purpure.jpg",
+    "gancho": "Gloss de alto impacto con destellos atrevidos que potencian tus labios.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20escarcha%20Purpure.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo glitter",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo glitter.jpg",
+    "gancho": "Luminosidad pura y volumen tentador con acabado espejo de alta duración.",
+    "precio": "10.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20glitter.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Gloss Ariel Caramelo",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Gloss Ariel Caramelo.jpg",
+    "gancho": "Tono caramelo cálido con brillo radiante e hidratación prolongada.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Caramelo.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Gloss Ariel Rojo",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Gloss Ariel Rojo.jpg",
+    "gancho": "Hidratación profunda con un toque de luz roja vibrante para tus labios.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Gloss%20Ariel%20Rojo.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Lip Oil",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Lip Oil.jpg",
+    "gancho": "Fórmula ultra hidratante de L.A. Colors para un brillo natural y saludable.",
+    "precio": "8.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Lip Oil Sandía Tono 02",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Lip Oil Sandía Tono 02.jpg",
+    "gancho": "Nutrición con aroma a sandía y aplicador de silicona ideal para tus lip combos.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2002.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Lip Oil Sandía Tono 03",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Lip Oil Sandía Tono 03.jpg",
+    "gancho": "Brillo sedoso e hidratante sin alterar el color de tus labiales base.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Lip%20Oil%20Sand%C3%ADa%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Retro Kisses",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Retro Kisses.jpg",
+    "gancho": "Reflejos tornasol retro para unos labios llenos de magia y juventud.",
+    "precio": "8.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Retro%20Kisses.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brillo Twist Villanos",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brillo Twist Villanos.jpg",
+    "gancho": "Suavidad acolchada con leve destello rosado para labios irresistibles.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brillo%20Twist%20Villanos.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Brocha y esponja",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Brocha y esponja.jpg",
+    "gancho": "Dúo esencial compacto para una aplicación de maquillaje de nivel profesional.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Brocha%20y%20esponja.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Cepillo barbie",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Cepillo barbie.jpg",
+    "gancho": "Kit portátil de cepillo y scrunchie de Barbie para peinados rápidos con mucho estilo.",
+    "precio": "8.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Cepillo%20barbie.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Contorno En Crema Queen",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Contorno En Crema Queen.jpg",
+    "gancho": "Esculpido facial de precisión profesional con aplicador de esponja ultra suave.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Contorno%20En%20Crema%20Queen.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Corrector rosado Barbie",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Corrector rosado Barbie.jpg",
+    "gancho": "Neutraliza y da luz a la mirada cancelando tonos oscuros en las ojeras.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Corrector%20rosado%20Barbie.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Eye lash serum",
+    "categoria": "PESTAÑAS",
+    "imagen": "IMAGENES PRODUCTOS/Eye lash serum.jpg",
+    "gancho": "Fórmula nutritiva que estimula el crecimiento natural de pestañas y cejas más densas.",
+    "precio": "30.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Eye%20lash%20serum.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Fijador Dreams",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Fijador Dreams.jpg",
+    "gancho": "Fijación prolongada con hidratación de aloe vera y pepino sin efecto pesado.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Fijador%20Dreams.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Iluminador corporal",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Iluminador corporal.jpg",
+    "gancho": "Partículas violetas con efecto tornasol para deslumbrar con luz propia.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20corporal.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Iluminador Horneado Chocolate",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Iluminador Horneado Chocolate.jpg",
+    "gancho": "Cuatro tonos horneados de luminosidad elegante para pómulos y lagrimal.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Horneado%20Chocolate.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Iluminador Tornasol Princesas Cenicienta",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Iluminador Tornasol Princesas Cenicienta.jpg",
+    "gancho": "Destellos de cuento de hadas para puntos de luz mágicos en tu rostro.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tornasol%20Princesas%20Cenicienta.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Iluminador Trío Barbie",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Iluminador Trío Barbie.jpg",
+    "gancho": "Trío de tonos dorados y champagne curados para el glow perfecto en cada piel.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Iluminador%20Tr%C3%ADo%20Barbie.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Jabon Detox",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Jabon Detox.jpg",
+    "gancho": "Limpieza profunda con carbón activado que purifica poros sin resecar.",
+    "precio": "9.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Jabon%20Detox.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Kit Labios En Barra Princesas",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Kit Labios En Barra Princesas.jpg",
+    "gancho": "Dúo de delineador y labial cremoso para unos labios definidos con más volumen.",
+    "precio": "25.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20Labios%20En%20Barra%20Princesas.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Kit X 2 Delineadores Stitch",
+    "categoria": "OJOS",
+    "imagen": "IMAGENES PRODUCTOS/Kit X 2 Delineadores Stitch.jpg",
+    "gancho": "Dúo blanco y negro de larga duración e impermeables para trazos perfectos.",
+    "precio": "25.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%202%20Delineadores%20Stitch.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Kit X 4 Mini Pomos",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Kit X 4 Mini Pomos.jpg",
+    "gancho": "Mini borlas ultra suaves diseñadas para sellar y difuminar en zonas difíciles.",
+    "precio": "6.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20X%204%20Mini%20Pomos.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Labial cat lips tono 06",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Labial cat lips tono 06.jpg",
+    "gancho": "Bálsamo ultra suave que nutre e intensifica el tono natural de tus labios.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Labial%20cat%20lips%20tono%2006.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "labial matte trendy - Tono 03, 07, 09, 12, 13, 15, 16, 19.",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/labial matte trendy - Tono 03, 07, 09, 12, 13, 15, 16, 19..jpg",
+    "gancho": "Color mate intramferible de secado rápido que no se cuartea y dura hasta 6 horas.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20labial%20matte%20trendy%20-%20Tono%2003%2C%2007%2C%2009%2C%2012%2C%2013%2C%2015%2C%2016%2C%2019..%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Labial y Delineador Glam Club  Tono 03",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Labial y Delineador Glam Club  Tono 03.jpg",
+    "gancho": "El kit mate perfecto: delineador retráctil y labial líquido de larga duración.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Labial%20y%20Delineador%20Glam%20Club%20%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Lápiz Delineador Ojos Safari (cafe)",
+    "categoria": "OJOS",
+    "imagen": "IMAGENES PRODUCTOS/Lápiz Delineador Ojos Safari (cafe).jpg",
+    "gancho": "https://drive.google.com/file/d/1goDdzgBd2NdJuJyg0rv1Cdi1fNDVj89D/view?usp=sharing",
+    "precio": "5.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20(cafe).%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Lápiz Delineador Ojos Safari (negro)",
+    "categoria": "OJOS",
+    "imagen": "IMAGENES PRODUCTOS/Lápiz Delineador Ojos Safari (negro).jpg",
+    "gancho": "Negro profundo de alta pigmentación para delinear o difuminar con precisión.",
+    "precio": "5.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Delineador%20Ojos%20Safari%20(negro).%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Lápiz Para Cejas Beauty Glazed Tono 03",
+    "categoria": "CEJAS",
+    "imagen": "IMAGENES PRODUCTOS/Lápiz Para Cejas Beauty Glazed Tono 03.jpg",
+    "gancho": "Doble punta de precisión para simular pelo a pelo y rellenar con acabado natural.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20L%C3%A1piz%20Para%20Cejas%20Beauty%20Glazed%20Tono%2003.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Luxe Clean Trendy",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Luxe Clean Trendy.jpg",
+    "gancho": "Limpiador especializado para remover manchas de maquillaje en tu ropa al instante.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Luxe%20Clean%20Trendy.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pegante de pestañas doble",
+    "categoria": "PESTAÑAS",
+    "imagen": "IMAGENES PRODUCTOS/Pegante de pestañas doble.jpg",
+    "gancho": "Pegante dúo transparente y negro para pestañas y apliques de fácil fijación.",
+    "precio": "17.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pegante%20de%20pesta%C3%B1as%20doble.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pin Forky Toy Story",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Pin Forky Toy Story.jpg",
+    "gancho": "Accesorio divertido de Toy Story para personalizar tus bolsos y cartucheras.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Forky%20Toy%20Story.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pin Marcianito Toy Story",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Pin Marcianito Toy Story.jpg",
+    "gancho": "Detalle único y lleno de color para darle estilo a tus prendas y accesorios.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marcianito%20Toy%20Story.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pin Marranito Toy Story",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Pin Marranito Toy Story.jpg",
+    "gancho": "Pin coleccionable de alta calidad para un toque divertido en tu outfit.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Marranito%20Toy%20Story.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pin Tiro Al Blanco",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Pin Tiro Al Blanco.jpg",
+    "gancho": "Estilo auténtico de Toy Story para decorar cosmetiqueras y chaquetas.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Tiro%20Al%20Blanco.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pin Vaqueros Toy Story",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Pin Vaqueros Toy Story.jpg",
+    "gancho": "Accesorio de moda icónico para fanáticos de Disney y la moda retro.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pin%20Vaqueros%20Toy%20Story.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Polvo De Hadas Golden",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Polvo De Hadas Golden.jpg",
+    "gancho": "Destellos dorados de alta precisión para un glow de impacto en piel y escote.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas%20Golden.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Polvo De Hadas",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Polvo De Hadas.jpg",
+    "gancho": "Luminosidad mágica e instantánea en rostro y cuerpo con acabado dorado radiante.",
+    "precio": "12.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Polvo%20De%20Hadas.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Primer Pop",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Primer Pop.jpg",
+    "gancho": "Prepara la piel suavizando poros y fijando tu base por mucho más tiempo.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Primer%20Pop.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Protector Solar Facial 40ml",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Protector Solar Facial 40ml.jpg",
+    "gancho": "Protección SPF 50+ fluida y ligera que cuida tu piel del envejecimiento.",
+    "precio": "40.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Protector%20Solar%20Facial%2040ml.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Rubor En Crema Happy",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Rubor En Crema Happy.jpg",
+    "gancho": "Calidez y viveza instantánea en tus mejillas con pigmentación de alta calidad.",
+    "precio": "10.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20En%20Crema%20Happy.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Rubor Líquido Beverly Hills",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Rubor Líquido Beverly Hills.jpg",
+    "gancho": "Acabado terciopelo de fácil difuminado para un rubor radiante y natural.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Rubor%20L%C3%ADquido%20Beverly%20Hills.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Splash envidia",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Splash envidia.jpg",
+    "gancho": "Fragancia sofisticada con acordes florales y frutales para un aura inolvidable.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20envidia.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Tinta Soda",
+    "categoria": "LABIOS",
+    "imagen": "IMAGENES PRODUCTOS/Tinta Soda.jpg",
+    "gancho": "Tinta acuosa de larga duración para un tono rojizo fresco y saludable en labios.",
+    "precio": "10.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Tinta%20Soda.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Toallas Desmaquillantes Pool Party",
+    "categoria": "ACCESORIOS",
+    "imagen": "IMAGENES PRODUCTOS/Toallas Desmaquillantes Pool Party.jpg",
+    "gancho": "Remueven el maquillaje e impurezas dejando tu piel limpia, suave y fresca.",
+    "precio": "15.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Toallas%20Desmaquillantes%20Pool%20Party.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Torre Multi Iluminador",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Torre Multi Iluminador.jpg",
+    "gancho": "Cuatro iluminadores de alta pigmentación y glitter tornasol para looks deslumbrantes.",
+    "precio": "20.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Torre%20Multi%20Iluminador.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Splash Llavero Candy Bum",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Splash Llavero Candy Bum.jpg",
+    "gancho": "Aroma dulce a bombón y sutiles destellos para hacer brillar tu piel y cabello.",
+    "precio": "24.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20Llavero%20Candy%20Bum.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Splash Llavero Choco Vibes",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Splash Llavero Choco Vibes.jpg",
+    "gancho": "Irresistible aroma a chocolate con destellos radiantes en un práctico formato llavero.",
+    "precio": "24.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20Llavero%20Choco%20Vibes.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Splash Llavero Maracuyazo",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Splash Llavero Maracuyazo.jpg",
+    "gancho": "Frescura tropical de maracuyá y brillo luminoso para llevar contigo a todas partes.",
+    "precio": "24.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20Llavero%20Maracuyazo.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Exfoliante Strawberry Azucar 350ml",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Exfoliante Strawberry Azucar 350ml.jpg",
+    "gancho": "Renueva y suaviza tu piel con la dulce exfoliación natural y aroma a fresa.",
+    "precio": "28.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Exfoliante%20Strawberry%20Azucar%20350ml.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Kit Cartuchera Watermelon",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Kit Cartuchera Watermelon.jpg",
+    "gancho": "Rutina corporal completa con jugoso aroma a sandía en un práctico kit viajero.",
+    "precio": "40.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Kit%20Cartuchera%20Watermelon.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Mantequilla Corporal Candy Bum 220ml",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Mantequilla Corporal Candy Bum 220ml.jpg",
+    "gancho": "Nutrición profunda y brillo delicado con un dulce aroma libre de parabenos.",
+    "precio": "26.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Mantequilla%20Corporal%20Candy%20Bum%20220ml.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Mantequilla Maracuyazo 220ml",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Mantequilla Maracuyazo 220ml.jpg",
+    "gancho": "Hidratación ligera con energizante aroma a maracuyá para revitalizar tu piel.",
+    "precio": "26.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Mantequilla%20Maracuyazo%20220ml.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Mini Mantequilla Importada Choco Vibes 50g",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Mini Mantequilla Importada Choco Vibes 50g.jpg",
+    "gancho": "Nutrición cremosa y sedosa con tentador aroma a chocolate en tamaño compacto.",
+    "precio": "13.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Mini%20Mantequilla%20Importada%20Choco%20Vibes%2050g.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Mini Mantequilla Importada Strawberry 50g",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Mini Mantequilla Importada Strawberry 50g.jpg",
+    "gancho": "Piel ultra suave, hidratada y con destellos brillantes con aroma a fresa.",
+    "precio": "13.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Mini%20Mantequilla%20Importada%20Strawberry%2050g.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Stick Barra De Perfume Choco Vibes",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Stick Barra De Perfume Choco Vibes.jpg",
+    "gancho": "Perfume en barra portátil con delicioso aroma a chocolate para retocar en cualquier lugar.",
+    "precio": "18.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Stick%20Barra%20De%20Perfume%20Choco%20Vibes.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Agua micelar Pepino y Manzanilla",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Agua micelar Pepino y Manzanilla.jpg",
+    "gancho": "Desmaquilla, tonifica y calma tu piel con la frescura del pepino y la manzanilla.",
+    "precio": "22.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Agua%20micelar%20Pepino%20y%20Manzanilla.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Espuma Facial Hamamelis",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Espuma Facial Hamamelis.jpg",
+    "gancho": "Limpieza profunda que controla el brillo y purifica el rostro con acabado mate.",
+    "precio": "23.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Espuma%20Facial%20Hamamelis.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Splash Strawberry Imrportado 200ML",
+    "categoria": "CORPORAL",
+    "imagen": "IMAGENES PRODUCTOS/Splash Strawberry Imrportado 200ML.jpg",
+    "gancho": "Explosión refrescante de aroma a fresa para mantener tu cuerpo perfumado todo el día.",
+    "precio": "26.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Splash%20Strawberry%20Imrportado%20200ML.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Pestañina So Perfect Lash",
+    "categoria": "OJOS",
+    "imagen": "IMAGENES PRODUCTOS/Pestañina So Perfect Lash.jpg",
+    "gancho": "Máximo volumen y longitud a prueba de agua con definición pestaña por pestaña.",
+    "precio": "23.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Pesta%C3%B1ina%20So%20Perfect%20Lash.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Encrespador de Pestañas",
+    "categoria": "OJOS",
+    "imagen": "IMAGENES PRODUCTOS/Encrespador de Pestañas.jpg",
+    "gancho": "Rizado preciso y duradero en segundos protegiendo tus pestañas sin maltratarlas.",
+    "precio": "10.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Encrespador%20de%20Pesta%C3%B1as.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Jelly Glow plateado",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Jelly Glow plateado.jpg",
+    "gancho": "Iluminador en barra con glow jugoso y destellos plateados de acabado natural.",
+    "precio": "16.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Jelly%20Glow%20plateado.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Jelly Glow dorado",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Jelly Glow dorado.jpg",
+    "gancho": "Barra iluminadora de textura jelly para un acabado dorado radiante y saludable.",
+    "precio": "16.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Jelly%20Glow%20dorado.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Jelly Glow azul",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Jelly Glow azul.jpg",
+    "gancho": "Toque tornasol azul vanguardista con brillo jugoso y aplicación ultra suave.",
+    "precio": "16.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Jelly%20Glow%20azul.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  },
+  {
+    "nombre": "Jelly Glow Rosado",
+    "categoria": "ROSTRO",
+    "imagen": "IMAGENES PRODUCTOS/Jelly Glow Rosado.jpg",
+    "gancho": "Luminosidad sutil en barra con reflejos rosados para un glow fresco y juvenil.",
+    "precio": "16.000",
+    "precioDescuento": null,
+    "whatsappUrl": "https://wa.me/573153243483?text=Hola%20LUX!%20Me%20interesa%20comprar%20el%20producto%3A%20Jelly%20Glow%20Rosado.%20%C2%BFTienen%20disponibilidad%20para%20env%C3%ADo%20inmediato%3F"
+  }
+]
